@@ -1,0 +1,1478 @@
+@charset "UTF-8";
+
+
+
+
+
+
+
+
+
+body{
+
+
+
+margin: 0;
+
+
+
+padding: 0;
+
+
+
+position: absolute;
+
+
+
+width: 100%;
+
+
+
+background-color: #181818;
+
+}
+
+
+
+#header{
+
+	position: absolute;
+
+	left:20%;
+
+	z-index: 1;
+
+}
+
+
+
+html{
+
+	scroll-behavior: smooth;
+
+}
+
+
+
+#welcomeSec::before{
+
+	position: absolute;
+
+	content: "";
+
+	background-color: #00000099;
+
+	width: 100%;
+
+	height: 110vh;
+
+}
+
+
+
+
+
+.center{
+
+	margin-right: auto; margin-left: auto;
+
+	position:relative;
+
+	display: block;
+
+	width:fit-content;
+
+}
+
+
+
+
+
+
+
+
+
+#welcomeSec h1{
+
+	font-family: 'Courier New', Courier, monospace;
+
+	font-weight: 100;
+
+}
+
+
+
+@keyframes popin {
+
+	from {
+
+	  opacity: 0;
+
+	}
+
+
+
+	to {
+
+		opacity: 1;
+
+	}
+
+  }
+
+
+
+p{
+
+	position: relative;
+
+	color:white;
+
+	font-family:'Times New Roman', Times, serif;
+
+	text-shadow: 0 0 20px #000000;
+
+	font-size: 23px;
+
+	animation:popin 3s;
+
+}
+
+
+
+@keyframes slidein-top {
+
+	from {
+
+	  transform: translateY(-130%);
+
+	  opacity: 0;
+
+	}
+
+
+
+	to {
+
+	  transform: translateY(0%);
+
+	  opacity: 1;
+
+	}
+
+  }
+
+
+
+#welcome{
+
+	height: fit-content;
+
+	position: relative;
+
+	width: fit-content;
+
+	color:white;
+
+	text-shadow: 0 1px 20px #000000, 0px 20px 30px rgb(0 0 0 / 30%);
+
+	font-size:7em;
+
+	animation:slidein-top 0.7s;
+
+	align-self: end;
+
+}
+
+
+
+#title p{
+
+	margin-bottom:1%;
+
+}
+
+
+
+@keyframes slidein-left {
+
+	from {
+
+	  transform: translateX(-300%);
+
+	}
+
+
+
+	to {
+
+		transform: translateX(0);
+
+	}
+
+  }
+
+
+
+#subTitle{
+
+	text-align: center;
+
+	margin: 0 auto;
+
+	position: relative;
+
+	width: fit-content;
+
+	height: fit-content;
+
+	font-size:5em;
+
+	color:#ffffff;
+
+	text-shadow: 0 1px 20px #000000, 0px 20px 30px rgb(0 0 0 / 30%);
+	animation:slidein-left 1s;
+
+}
+
+
+
+@keyframes slidein-right {
+
+	from {
+
+	  transform: translateX(500%);
+
+	}
+
+
+
+	to {
+
+		transform: translateX(0);
+
+	}
+
+  }
+
+
+
+#start{
+
+	height: fit-content;
+
+	font-size:30px;
+
+	padding:10px;
+
+	border-radius:20px 10px 20px 10px;
+
+	font-family: 'Courier New', Courier, monospace;
+
+	background-color:#b58773;
+
+	color:white;
+
+	transition:0.3s;
+
+	animation:slidein-right 1s;
+
+	position: relative;
+
+}
+
+
+
+.genericBtn{
+
+	width: fit-content;
+
+	height: fit-content;
+
+	font-size: 30px;
+
+	padding: 10px;
+
+	border-radius: 20px 10px 20px 10px;
+
+	background-color: #ffb578;
+
+	color: #3a3a2c;
+
+	transition: 0.3s;
+
+	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+
+
+.genericBtn:hover{
+
+	color:white;
+
+}
+
+
+
+#start:hover{
+
+	background-color:#b58773ad;
+
+	color:black;
+
+}
+
+
+
+#welcomeSec{
+
+	background-image: url('../images/background2-small.jpg');
+
+	background-size: cover;
+
+	width:100%;
+
+	height:110vh;
+
+	position:relative;
+
+	background-attachment: fixed;
+
+	margin: 0;
+
+}
+
+
+
+#minecraftSec{
+
+	background-image: url('../images/minecraftBackground.jpeg');
+
+	background-size:cover;
+
+	width:100%;
+
+	height:110vh;
+
+	position:relative;
+
+	margin: 0;
+
+}
+
+
+
+#minecraftSec::before{
+
+	position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    content: "";
+
+    background-color: #00000099;
+
+    width: 100%;
+
+    height: 110vh;
+
+}
+
+
+
+@font-face {
+
+	font-family: minecraft;
+
+	src: url('../fonts/MinecraftTen-VGORe.ttf');
+
+}
+
+
+
+@font-face {
+
+	font-family: minecraftSub;
+
+	src: url('../fonts/TheGoodMonolith.ttf');
+
+}
+
+
+
+#minecraftTitle{
+
+	position: relative;
+
+	font-family: minecraft;
+
+	color: white;
+
+	font-size: 5em;
+
+	text-shadow: 0px 0px 20px #000000,0px 0px 20px #000000,0px 0px 20px #000000,0px 0px 20px #000000;
+
+	letter-spacing: 4px;
+
+	animation:slidein-left 1s;
+
+	width: fit-content;
+
+	height: fit-content;
+
+	align-self: end;
+
+}
+
+
+
+#minecraftP p{
+
+	text-shadow: 0 0 20px black,0 0 20px black,0 0 20px black;
+
+	margin-bottom: 1vh;
+
+}
+
+
+
+#minecraftSubTitle{
+
+	font-family: minecraftSub;
+
+	font-size: 5em;
+
+	text-shadow: 0px 0px 20px #000000, 0px 0px 20px #000000;
+
+	position:relative;
+
+	font-weight: bold;
+
+}
+
+
+
+
+
+
+
+.hidden{
+
+	opacity: 0;
+
+}
+
+
+
+
+
+
+
+.console-underscore {
+
+
+
+color: white;
+
+
+
+display: inline-block;
+
+
+
+position: relative;
+
+
+
+left: 10px;
+
+
+
+font-size: 5em;
+
+}
+
+
+
+#minecraftP{
+
+	position:relative;
+
+	text-align: center;
+
+	height: fit-content;
+
+}
+
+
+
+
+
+/*custom font from Ace_Monkey_Ilium Minecraft made by Joex*/
+
+@font-face{
+
+	font-family:minecraftFont;
+
+	src:url('../fonts/minecraftFont.ttf')
+
+}
+
+
+
+
+
+*, ::before, ::after {
+
+  box-sizing: border-box;
+
+  margin: 0;
+
+  padding: 0;
+
+}
+
+
+
+div#welcomeP {
+
+    position: relative;
+
+    text-align: center;
+
+    height: fit-content;
+
+}
+
+
+
+div#welcomeP * {
+
+    margin-top: 2vh;
+
+    position: relative;
+
+}
+
+
+
+/* Minecraft Style Menu */
+
+.mc-menu {animation: popin 3s;width: fit-content;height: fit-content;}
+
+
+
+.mc-menu .double {
+
+  grid-area: fourth;
+
+}
+
+
+
+.mc-menu .double {width: 100%;display: grid;grid-template-columns: 1fr 1fr;height: fit-content;grid-gap: 8px;}
+
+/* Minecraft Style Button */
+
+.mc-button {
+
+
+
+font: 15pt 'minecraftFont', sans-serif;
+
+
+
+z-index: 1;
+
+
+
+height: var(--btn-size);
+
+
+
+width: calc(var(--btn-size) * 10);
+
+
+
+cursor: pointer;
+
+
+
+overflow: hidden;
+
+
+
+white-space: nowrap;
+
+
+
+user-select: none;
+
+
+
+background: #999 url('https://i.ibb.co/rb2TWXL/bgbtn.png') center / cover;
+
+
+
+image-rendering: pixelated;
+
+
+
+border: 2px solid #000;
+
+  /* Mouse over */
+
+}
+
+.mc-button:hover .title {
+
+  background-color: rgba(100, 100, 255, 0.45);
+
+  text-shadow: 2px 2px #202013CC;
+
+  color: #FFFFA0;
+
+}
+
+.mc-button:active .title {
+
+  box-shadow: inset -2px -4px #0004, inset 2px 2px #FFF5;
+
+  /* Button title */
+
+}
+
+.mc-button .title {
+
+  
+
+  /* Others */
+
+  
+
+padding-bottom: 10px;
+
+  
+
+padding-left: 2em;
+
+  
+
+padding-right: 2em;
+
+  
+
+padding-top: 5px;
+
+  
+
+width: 100%;
+
+  
+
+height: 100%;
+
+  
+
+display: flex;
+
+  
+
+justify-content: center;
+
+  
+
+align-items: center;
+
+  
+
+color: #DDD;
+
+  
+
+text-shadow: 2px 2px #000A;
+
+  
+
+box-shadow: inset -2px -4px #0006, inset 2px 2px #FFF7;
+
+}
+
+.mc-button.full {
+
+  width: 100%;
+
+  height: 100%;
+
+}
+
+
+
+#applicationSec{
+
+	position: relative;
+
+	width: 100%;
+
+	height:110vh;
+
+
+
+	background-image:url('../images/androidBackground.jpg');
+
+	background-size: cover;
+
+}
+
+
+
+
+
+#applicationSec::before{
+
+	position: absolute;
+
+	content: "";
+
+    top: 0;
+
+    left: 0;
+
+    background-color: #00000099;
+
+    width: 100%;
+
+    height: 110vh;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@font-face {
+
+	font-family: 'Sernest';
+
+	src: url('../fonts/SernestRegular-7B824.otf');
+
+}
+
+
+
+#appTitle{
+
+	position: relative;
+
+	font-family: 'Sernest', sans-serif;
+
+	font-size: 8em;
+
+	color: #ffb578;
+
+	text-shadow: 0 0 40px black;
+
+}
+
+
+
+
+
+@font-face{
+
+	font-family: warlow;
+
+	src:url('../fonts/Warlow\ Sans.otf');
+
+}
+
+
+
+#appSubTitle{
+
+	position: relative;
+
+	font-family: warlow,sans-serif;
+
+	color:#b3b3b3;
+
+	font-size:3em;
+
+	text-shadow: 0 0 20px #000;
+
+	text-align: center;
+
+}
+
+
+
+#appP{text-align: center;height: fit-content;}
+
+
+
+#appP p{
+
+	text-shadow: 0 -1px 0 rgb(0, 0, 0), 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c;
+
+	margin-bottom: 1.5vh;
+
+	font-size:25px;
+
+}
+
+
+
+#appContinue {
+
+    animation: none;
+
+    position: relative;
+
+}
+
+
+
+#appContact {
+
+    position: relative;
+
+}
+
+
+
+#webSec{
+
+	position: relative;
+
+	width: 100%;
+
+	height:110vh;
+
+
+
+	background-image:url('../images/webBackground.jpg');
+
+	background-size: cover;
+
+}
+
+
+
+#webSec::before{
+
+	position:absolute;
+
+	content:"";
+
+	top: 0;
+
+    left: 0;
+
+    background-color: #00000099;
+
+    width: 100%;
+
+    height: 110vh;
+
+}
+
+
+
+
+
+@font-face {
+
+	font-family: amoitar;
+
+	src: url('../fonts/AmoitarRegular-jEylO.otf');
+
+}
+
+
+
+#webTitle {
+
+    text-align: center;
+
+    position: relative;
+
+    font-family: 'Amoitar', sans-serif;
+
+    font-size: 4.5em;
+
+    color: #76e9f7;
+
+    text-shadow: 0 0 20px black;
+
+}
+
+
+
+#webSubTitle{
+
+	position: relative;
+
+	font-size:2.5em;
+
+	color:white;
+
+	font-family: 'Amoitar',sans-serif;
+
+	text-shadow: 0 0 20px black;
+
+	text-align: center;
+
+}
+
+
+
+#webP p{
+
+	text-shadow: 0 -1px 0 rgb(0, 0, 0), 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c;
+
+	margin-bottom: 1vh;
+
+	font-size:26px;
+
+}
+
+
+
+#webP{position: relative;}
+
+
+
+#webContact{
+
+    border-color: white;
+
+    color:#2c2323;
+
+    background-color: #4eadb9;
+
+    animation:none;
+
+    position: relative;
+
+}
+
+
+
+#webContact:hover{
+
+	color:white;
+
+}
+
+
+
+#contactSec{
+
+	height: 60vh;
+
+	width:100%;
+
+	background-color:rgb(24 24 24);
+
+}
+
+
+
+/*#1F1F1F*/
+
+/*rgb(24 24 24)*/
+
+
+
+
+
+#contactTitle,#contactSubTitle{
+
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+	font-weight: bold;
+
+	font-size:3em;
+
+	color:white;
+
+	text-shadow: 0 0 20px black;
+
+	grid-area: a;
+
+}
+
+
+
+#btnMailLogo {
+
+    width: 88px;
+
+    height: 88px;
+
+    position: relative;
+
+    background-image: url('../images/mailLogo.png');
+
+    background-size: cover;
+
+    background-color: transparent;
+
+    border: none;
+
+    cursor: pointer;
+
+}
+
+#btnMail {
+
+    font-family: warlow,sans-serif;
+
+    position: relative;
+
+    color: white;
+
+    text-shadow: 0 0 20px black;
+
+    font-size: 2em;
+
+    background: none;
+
+    border: none;
+
+    cursor: pointer;
+
+}
+
+
+
+#btnDiscord {
+
+    font-family: warlow,sans-serif;
+
+    position: relative;
+
+    color: white;
+
+    text-shadow: 0 0 20px black;
+
+    font-size: 2em;
+
+    background: none;
+
+    border: none;
+
+    cursor: pointer;
+
+    width: fit-content;
+
+}
+
+
+
+#btnDiscord:hover{
+
+	text-decoration: underline;
+
+}
+
+
+
+#btnMail:hover{
+
+	text-decoration: underline;
+
+}
+
+
+
+#btnDiscordLogo {
+
+    width: 70px;
+
+    height: 70px;
+
+    position: relative;
+
+    background-image: url('../images/discordLogo.png');
+
+    background-size: cover;
+
+    background-color: transparent;
+
+    border: none;
+
+    cursor: pointer;
+
+}
+
+
+
+span#contactSubTitle {
+
+    font-size: 2em;
+
+    color:#ffffff61;
+
+    grid-area: b;
+
+}
+
+
+
+#clipboard1, #clipboard2 {
+
+    font-family: warlow,sans-serif;
+
+    font-size: 1.7em;
+
+    position: relative;
+
+    color: #59deff;
+
+    opacity: 0;
+
+    width: fit-content;
+
+    height: fit-content;
+
+    align-self: end;
+
+}
+
+
+
+#clipboard1 {grid-area: c;}
+
+
+
+#clipboard2 {
+
+    grid-area: e;
+
+}
+
+
+
+.popIn{
+
+	opacity:1 !important;
+
+}
+
+
+
+nav {
+
+    position: fixed;
+
+    height: 110vh;
+
+    left: 0;
+
+    top: 0;
+
+    width: 13%;
+
+    background-color: #1212129e;
+
+    z-index: 1;
+
+}
+
+
+
+#firstLink {
+
+    margin-top: 70px;
+
+}
+
+
+
+a {
+
+	transition: 0.3s;
+
+    display: block;
+
+    margin: 4px 20px 30px 20px;
+
+    text-decoration: none;
+
+    color: #a5a0a0;
+
+    font-family: warlow,sans-serif;
+
+    font-size: 25px;
+
+}
+
+
+
+a:hover {
+
+    color: white;
+
+}
+
+
+
+
+
+
+
+#mailContactDiv{display: grid;grid-template-columns: auto auto;grid-area: d;align-content: center;}
+
+
+
+div#discordContactDiv {
+
+    position: relative;
+
+    grid-area: f;
+
+    display: grid;
+
+    grid-template-columns: auto auto;
+
+    align-content: center;
+
+    width: fit-content;
+
+}
+
+
+
+div#appBtns {
+
+    display: grid;
+
+    position: relative;
+
+    grid-template-areas:
+
+        "a b" !important;
+
+    height: fit-content;
+
+    grid-template-rows: auto auto;
+
+    grid-column-gap: 41px;
+
+}
+
+
+
+
+
+@media (max-width:740px){
+
+	#btnMail{
+
+		font-size:4vw;
+
+	}
+
+}
+
+
+
+@media(max-width:590px){
+
+	#webTitle{
+
+		font-size:12vw;
+
+	}
+
+}
+
+
+
+@media(max-width:800px){
+
+	#minecraftSubTitle{
+
+		font-size:9vw;
+
+	}
+
+	#console{
+
+		font-size:9vw;
+
+	}
+
+}
+
+
+
+@media(max-width:499px){
+
+	body{
+
+		width:499px;
+
+	}
+
+}
+
+
+
+@media (max-width:1555px){
+
+	nav{
+
+		opacity: 0;
+
+	}
+
+	
+
+}
+
+
+
+@media(max-height:820px){
+
+	
+
+	#minecraftSec,#welcomeSec,#applicationSec,#webSec{
+
+		height:900px;
+
+	}
+
+	#minecraftSec::before,#welcomeSec::before,#applicationSec::before,#webSec::before{
+
+		height:900px;
+
+	}
+
+	@media  (pointer:none) , (pointer:coarse){
+
+		#minecraftSec,#welcomeSec,#applicationSec,#webSec{
+
+			height:110vh;
+
+		}
+
+		#minecraftSec::before,#welcomeSec::before,#applicationSec::before,#webSec::before{
+
+			height:110vh;
+
+		}
+
+	}
+
+}
+
+
+
+@media  (pointer:none) , (pointer:coarse){
+
+	#welcomeP,#minecraftP,#appP,#webP{
+
+		width:95% !important;
+
+	}
+
+}
+
+
+
+@media (max-device-width:950px)   {
+
+	
+
+	@media (pointer:none) , (pointer:coarse){
+
+	
+
+	p{
+
+		font-size: 3em!important;
+
+	}
+
+	#welcomeGrid{
+
+		grid-template-rows:auto 0.2fr auto auto !important;
+
+	}
+
+	#start{
+
+		font-size:4.5em !important;
+
+	}
+
+	.mc-button{
+
+		font-size: 28pt !important;
+
+	}
+
+	.genericBtn{
+
+		font-size: 5em !important;
+
+	}
+
+
+
+	#contactGrid{
+
+		height:50% !important;
+
+	}
+
+	#btnMail{
+
+		font-size:2.5em !important;
+
+	}
+
+	#btnDiscord{
+
+		font-size:2.5em !important;
+
+	}
+
+	#contactTitle{
+
+		font-size:5em !important;
+
+	}
+
+	#contactSubTitle{
+
+		font-size:3em !important;
+
+	}
+
+	#clipboard1,#clipboard2{
+
+		font-size:2.7em !important;
+
+	}
+
+
+
+	
+
+
+
+	}
+
+}

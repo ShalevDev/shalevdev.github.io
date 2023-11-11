@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Shalev Developer</title>
+
+<link rel="stylesheet" href="static/css/stylesheet.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+<link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+
+
+
+</head>
+
+<body>
+
+<nav>
+    <ul>
+        <a href='#minecraftSec' id="firstLink">Minecraft</a>
+        <a href="#applicationSec">Applications</a>
+        <a href="#webSec">Websites</a>
+        <a href="#contactSec">Contact Me</a>
+    </ul>
+</nav>
+
+<section id="welcomeSec">
+    <div style="
+        display: grid;
+        justify-items: center;
+        height: 80%;
+        grid-template-rows: auto 0.3fr auto auto;
+    " id="welcomeGrid">
+        <h1 id="welcome">Welcome</h1>
+            <h1 id="subTitle" style="color:#ffffff;
+
+	text-shadow: 0 1px 20px #000000, 0px 20px 30px rgb(0 0 0 / 30%);">To Shalev's Website</h1>
+        <div id="welcomeP">
+        <p>I'm a developer with a vast knowledge of several coding languages such as: Java,C#,Python etc...</p>
+        <p>I have been studying computer science for the past 5 years and can code many different projects for your needs!</p>
+        <p>This website displays the different areas I can code in!</p>
+        </div>
+
+
+
+
+    <button id="start" onclick="window.location.replace('#minecraftSec')">Get Started</button>
+    </div>
+</section>
+
+<section id="minecraftSec">
+    <div style="
+    display: grid;
+    position: relative;
+    height: 93%;
+    justify-items: center;
+    grid-template-rows: 0.2fr 0.3fr auto auto;
+">
+
+    <span id="minecraftTitle" onclick="load();">Minecraft</span>
+
+    <div class="console-container" style="
+    height: fit-content;
+"><span id="minecraftSubTitle" style="color:#4fd6bd">C</span><div class="console-underscore" id="console">_</div></div>
+
+    <div id="minecraftP">
+    <p>Java is the common programming language used to code Minecraft plugins</p>
+    <p>I have developed numerous plugins, and have years of experince with high-level programming</p>
+    </br>
+    <p>Like many people, I've been playing Minecraft for many years. As a result, I know the game very well</p>
+</br>
+
+    <p>I can program any custom plugin you need with a full bug fixing policy:</p>
+    <p>May the plugin have some sort of bug, I'm willing to offer to fix it with no extra cost for the first month</p>
+    <p>May the plugin have a bug that cannot be resolved, the full price will be refunded if requested</p>
+</br>
+
+    <p>The cost of each plugin varies and depends on the specific request</p>
+    </div>
+
+    <div class="mc-menu">
+        <div class="double">
+            <div class="mc-button full">
+                <div class="title" onclick="window.location.replace('#contactSec')">Contact Me</div>
+            </div>
+            <div class="mc-button full">
+                <div class="title" onclick="window.location.replace('#applicationSec')">Continue</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</section>
+
+<section id="applicationSec">
+    <div style="
+        display: grid;
+        justify-items: center;
+        height: 80%;
+        grid-template-rows: 0.2fr auto auto auto;
+        position: relative;
+    ">
+        <span id="appTitle">Apps</span>
+        <span id="appSubTitle">Custom Applications</span>
+        <div id="appP">
+            <p>Android applications are commonly programmed in 2 languages, these being either Kotlin or Java</p>
+            <p>As stated above I have studied the C# programming language for 3 years which is very similar to Java</p>
+            </br>
+            <p>I can code any android application you need with a full bug fixing policy:</p>
+            <p>May the application have some sort of bug, I'm willing to offer to fix it with no extra cost for the first month</p>
+            <p>May the application have a bug that cannot be resolved, the full price will be refunded if requested</p>
+        </br>
+            <p>The cost of each application varies and depends on the specific request</p>
+        </div>
+
+    <div style="width: fit-content;display: grid;grid-template-columns: 1fr 1fr;height: fit-content;justify-items: center;margin: 0 auto;">
+            <button class="genericBtn" id="appContact" onclick="window.location.replace('#contactSec')">Contact Me</button>
+        <button class="genericBtn" id="appContinue" onclick="window.location.replace('#webSec')">Continue</button>
+    </div>
+
+
+
+
+    </div>
+</section>
+
+<section id="webSec">
+    <div style="
+        display: grid;
+        height: 80%;
+        position: relative;
+        justify-items: center;
+        grid-template-rows: 0.2fr auto auto auto;
+    ">
+        <span id="webTitle">Web Development</span>
+        <span id="webSubTitle">A website for your needs!</span>
+        <div id="webP" style="
+        text-align: center;
+    ">
+            <p>I have been creating websites for the past 3 years and I created 4 different websites</p>
+        </br>
+
+            <p>I can create any website you wish to build with a full bug fixing policy:</p>
+            <p>May the website have some sort of bug, I'm willing to offer to fix it with no extra cost for the first month</p>
+            <p>May the website have a bug that cannot be resolved, the full price will be refunded if requested</p>
+        <br>
+
+            <p>The cost of each website varies and depends on the specific request</p>
+        </div>
+        <button class="genericBtn" id="webContact" onclick="window.location.replace('#contactSec')">Contact me</button>
+    </div>
+</section>
+
+<section id="contactSec" class="">
+    <div style="
+        display: grid;
+        justify-items: center;
+        grid-template-areas:
+        'a'
+        'b'
+        'c';
+        width: 100%;
+        grid-template-rows: 0.1fr 0.5fr auto;
+        height: 78%;
+        " id="contactGrid">
+
+        <span id="contactTitle">Contact And Support Info</span>
+        <span id="contactSubTitle">(click text to copy)</span>
+
+        <div style="
+    grid-area: c;
+">
+        <span id="clipboard1">Copied to clipboard!</span>
+        <div id="mailContactDiv">
+        <button id="btnMailLogo" onclick="popin('clipboard1','Developer@shalevdev.com')"></button>
+        <button id="btnMail" onclick="popin('clipboard1','Developer@ShalevDev.com')">Developer@shalevdev.com</button>
+        </div>
+        <span id="clipboard2">Copied to clipboard!</span>
+        <div id="discordContactDiv">
+        <button id="btnDiscordLogo" onclick="popin('clipboard2','Shalev#5946')"></button>
+        <button id="btnDiscord" onclick="popin('clipboard2','Shalev#5946')">Shalev#5946</button>
+        </div>
+        </div>
+
+
+    </div>
+    </section>
+
+<script src="static/js/consoleText.js"></script>
+<script src="static/js/clipboardTxt.js"></script>
+
+
+</body></html>
